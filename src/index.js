@@ -28,6 +28,6 @@ app.get('/', ApiCommonHelper.getDefaultRoute);
 app.use(routes); /** All APIs routes */
 app.use("*", ApiCommonHelper.useGlobalRoute);
 
-// module.exports.handler = serverless(app, { provider: 'aws', });
+module.exports.handler = serverless(app, { provider: 'aws', });
 
-app.listen(3010, () => console.log("App is RUNNING ON PORT", 3010));
+// app.listen(3010, () => console.log("App is RUNNING ON PORT", 3010));
